@@ -17,4 +17,24 @@ This project aims to Verify KYC (Know Your Customer).
 ---
 
 ## 📂 Project Structure
+2025_VerifiCore_v1/
+├── app/ # Laravel backend logic (Models, Controllers, Middleware)
+├── bootstrap/ # Laravel bootstrap files
+├── config/ # Configuration files
+├── database/ # Migrations, seeders, factories
+├── public/ # Public assets & entry point (index.php)
+├── resources/ # Laravel resources
+│ ├── js/ # React + Vite frontend source
+│ │ ├── components/ # React components
+│ │ ├── pages/ # React pages
+│ │ ├── App.jsx # Main React component
+│ │ └── main.jsx # React entry point
+│ └── views/ # Blade templates (e.g., welcome.blade.php)
+├── routes/ # API & Web routes
+├── storage/ # Logs, cache, file storage
+├── tests/ # PHPUnit and frontend tests
+├── vite.config.js # Vite config file
+├── package.json # Frontend dependencies
+├── composer.json # Backend dependencies
+└── README.md
 
