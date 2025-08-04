@@ -5,7 +5,7 @@ const REGISTRATION_ROLES = ["member", "staff"];
 const LOGIN_ROLES = ["admin", "staff", "member"];
 
 const api = axios.create({
-  baseURL: "http://192.168.101.6:8000/api",
+  baseURL: "http://127.0.0.1:8000/api",
   headers:{
     "Content-type":"application/json",
     Accept: "application/json",
