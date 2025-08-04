@@ -10,4 +10,8 @@ export default defineConfig({
         }),
         viteReact(),
     ],
+    build: {
+        outDir: 'public/build',
+        emptyOutDir: true,
+    },
 });
