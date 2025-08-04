@@ -1,0 +1,33 @@
+.privacy-policy-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+.privacy-policy-wrapper h1 {
+  margin-bottom: 1rem;
+  color: #213a61;
+}
+
+.privacy-policy-wrapper h2 {
+  margin-top: 2rem;
+  color: #48107c;
+}
+
+.privacy-policy-wrapper ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.privacy-policy-wrapper a {
+  color: #242627;
+  text-decoration: none;
+}
+
+.privacy-policy-wrapper a:hover {
+  text-decoration: underline;
+  color: #9627fd;
+  font-weight: bold;
+}

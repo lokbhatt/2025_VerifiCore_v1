@@ -1,0 +1,70 @@
+.about-wrapper {
+  padding: 6rem 1.5rem 3rem;
+  background: linear-gradient(135deg, #b0c9da, #dfc0c0);
+  text-align: baseline;
+  width: 100%;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  color: #213a61;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-section {
+  margin-bottom: 2rem;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  color: #48107c;
+  margin-bottom: 0.75rem;
+}
+
+.about-section p,
+.about-section ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.about-section ul {
+  padding-left: 1.2rem;
+}
+
+.about-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.about-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #213a61, #48107c);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #48107c, #213a61);
+}

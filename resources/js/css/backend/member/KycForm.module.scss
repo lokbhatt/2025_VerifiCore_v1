@@ -1,0 +1,177 @@
+.kycForm {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', sans-serif;
+
+  .fieldset {
+    margin-bottom: 2rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  .fieldset legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .row > div {
+    flex: 1 1 200px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 0.5rem 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 1rem;
+        outline: none;
+        transition: border 0.2s ease;
+
+        &:focus {
+          border-color: #3b82f6;
+        }
+      }
+    }
+  }
+
+  .remarksTextarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    resize: both;
+    outline: none;
+    transition: border-color 0.2s ease;
+
+    &:focus {
+      border-color: #3b82f6;
+    }
+  }
+
+  .checkboxRow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+
+    label {
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+  }
+
+  button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #2563eb;
+    }
+
+    &:disabled {
+      background-color: #9ca3af;
+      cursor: not-allowed;
+    }
+  }
+
+  .sectionTitle {
+    margin: 2rem 0 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #444;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.25rem;
+  }
+
+  .reactSelectContainer {
+    font-size: 0.95rem;
+  }
+
+  .reactSelect__control {
+    border-radius: 6px !important;
+    border-color: #000 !important;
+    min-height: 38px;
+    font-size: 0.95rem;
+    box-shadow: none !important;
+  }
+
+  .reactSelect__value-container {
+    padding: 2px 8px;
+  }
+
+  .reactSelect__menu {
+    z-index: 10;
+    font-size: 0.95rem;
+  }
+
+  .reactSelect__indicator-separator {
+    display: none;
+  }
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .kycForm {
+    padding: 1rem;
+
+    .row {
+      flex-direction: column;
+
+      > div {
+        width: 100%;
+      }
+    }
+  }
+}

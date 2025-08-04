@@ -1,0 +1,130 @@
+.user-show-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.page-header h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.header-action {
+  display: flex;
+  gap: 10px;
+}
+
+.user-details {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.profile-section {
+  flex: 0 0 150px;
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #eee;
+}
+
+.profile-avatar.no-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f3f3;
+  color: #666;
+  font-size: 14px;
+}
+
+.info-section {
+  flex: 1;
+}
+
+.info-section p {
+  font-size: 15px;
+  margin: 10px 0;
+  color: #444;
+}
+
+.info-section strong {
+  color: #222;
+}
+
+.status-badge {
+  padding: 3px 8px; 
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.active, .approved {
+  background: #e0f8e9;
+  color: #2e7d32;
+}
+
+.status-badge.inactive, .pending {
+  background: #fdecea;
+  color: #c62828;
+}
+
+.loading-text,
+.error-text,
+.no-data {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.status-form {
+  margin-top: 20px;
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.radio-group label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.radio-group input {
+  margin-right: 6px;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}

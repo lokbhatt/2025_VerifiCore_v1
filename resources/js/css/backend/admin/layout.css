@@ -1,0 +1,27 @@
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-body {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sidebar-wrapper {
+  width: auto;
+  background-color: #101724;
+  overflow-y: auto;
+  color: white;
+}
+
+.page-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f4f6f8;
+  overflow-y: auto;
+}

@@ -1,0 +1,164 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(135deg, #213a61, #48107c);
+  padding: 0.8rem 1.2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  width: 70%;
+  object-fit: contain;
+}
+
+.nav_left {
+  display: flex;
+  align-items: center;
+}
+.nav_left h3 {
+  margin: 0;
+}
+
+.sidebar_toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-right: 1rem;
+
+  &:hover {
+    color: #ccc;
+  }
+}
+
+.main_menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  .searchWrapper {
+    input {
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        color: #ccc;
+      }
+    }
+  }
+
+  &.open {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+
+    ul {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.right_section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toggle_btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.profile_area {
+  position: relative;
+
+  .profile_button {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: white;
+    gap: 0.4rem;
+    cursor: pointer;
+    padding: 0.3rem;
+  }
+
+  .profile_img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+  .username {
+    display: inline-block;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .dropdown_menu {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background-color: #fff;
+    color: #333;
+    list-style: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 180px;
+    z-index: 1001;
+
+    li {
+      padding: 0.7rem 1rem;
+
+      a {
+        color: #333;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+
+        &:hover {
+          background-color: #f5f5f5;
+        }
+      }
+    }
+  }
+}

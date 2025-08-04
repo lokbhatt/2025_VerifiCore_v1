@@ -1,0 +1,42 @@
+.admin-profile-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.admin-profile-page h2 {
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 700;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
+}
+
+.profile-details p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.profile-details p strong {
+  width: 140px;
+  display: inline-block;
+  color: #007bff;
+}
+
+.error-text {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 16px;
+  background: #ffe6e6;
+  border: 1px solid #ff4d4f;
+  color: #a8071a;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}

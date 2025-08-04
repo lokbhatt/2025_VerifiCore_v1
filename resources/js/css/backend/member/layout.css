@@ -1,0 +1,31 @@
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-body {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sidebar-wrapper {
+  width: 250px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  background-color: #2c2c2c; 
+}
+
+.sidebar-wrapper.collapsed {
+  width: 60px;
+}
+
+.page-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f4f6f8;
+  overflow-y: auto;
+  transition: margin-left 0.3s ease;
+}

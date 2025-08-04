@@ -1,0 +1,94 @@
+.sidebar {
+  background-color: #2c2c35;
+  color: #fff;
+  width: 250px;
+  min-height: 100vh;
+  padding: 1rem;
+  transition: width 0.3s ease;
+  flex-shrink: 0;
+  position: relative;
+
+  &.collapsed {
+    width: 60px;
+
+    .menu span,
+    .lastLogin span,
+    .lastLogin small,
+    .footerNote {
+      display: none;
+    }
+
+    .toggleButton {
+      justify-content: center;
+    }
+  }
+}
+
+.toggleButton {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+
+  svg {
+    font-size: 1.5rem;
+  }
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin: 1rem 0;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #ccc;
+      }
+
+      svg {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.lastLogin {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #ccc;
+  padding-left: 2px;
+
+  svg {
+    margin-right: 5px;
+  }
+}
+
+.footerNote {
+  position: absolute;
+  bottom: 20px;
+  left: 1rem;
+  font-size: 0.8rem;
+  color: #aaa;
+
+  a {
+    color: #eee;
+    text-decoration: underline;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+}

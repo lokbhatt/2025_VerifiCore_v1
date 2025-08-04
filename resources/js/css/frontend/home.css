@@ -1,0 +1,146 @@
+/* Hero Section */
+.hero-section {
+  padding: 6rem 1.5rem 3rem;
+  background: linear-gradient(135deg, #dbe9f3, #b8b8b8);
+  text-align: center;
+  width: 100%;
+}
+
+.hero-section h2 {
+  font-size: 3rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  font-size: 1.5rem;
+  color: #374151;
+  line-height: 2.5rem;
+  text-align: justify;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Container */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* Features Section */
+.features-section {
+  padding: 4rem 1.5rem;
+  background: linear-gradient(135deg, #dcf0ef, #b8b8b8);
+  text-align: center;
+}
+
+.features-title {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+}
+
+.features-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 320px;
+  width: 100%;
+  text-align: left;
+}
+
+.feature-card h4 {
+  font-size: 1.25rem;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #c0c0c0, #6f7e7e);
+  color: #1e3a8a;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.cta-text {
+  font-size: 1.1rem;
+  color: #111827;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  background: #50bfff;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #1d8bbf;
+}
+
+.cta-link {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: underline;
+  align-self: center;
+}
+.cta-link:hover {
+  color: #111827;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .hero-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    max-width: 100%;
+  }
+}
